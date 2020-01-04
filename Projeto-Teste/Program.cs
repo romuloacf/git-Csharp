@@ -5,9 +5,17 @@ namespace Projeto_Teste {
         static void Main(string[] args) {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Oi tutupom");
-            int x = 1;
-            int a = x;
+            
+            Random rnd = new Random();
+            int x = rnd.Next();            
+            int count = 0;
+            //Console.WriteLine("number" + x);
 
+            for (int i = 0; i < x; i++) {
+                count++;
+            }
+
+            Console.WriteLine("contador" + count);
             Console.ReadLine();
         }
     }
